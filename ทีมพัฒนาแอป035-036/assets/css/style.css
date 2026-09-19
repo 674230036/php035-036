@@ -1420,6 +1420,12 @@ body {
   box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
 }
 
+.room-status-tag.capacity-exceeded {
+  background: rgba(245, 158, 11, 0.9);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+}
+
 /* FIX 5: room-content (app.js) = room-body (CSS เดิม)
    กล่องเนื้อหาด้านล่างรูปภาพในการ์ดห้อง */
 .room-content {

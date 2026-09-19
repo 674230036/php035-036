@@ -59,8 +59,12 @@ class Database
                 // หากยังไม่มีฐานข้อมูล spacehub_db ลองสร้างและ import schema อัตโนมัติ
                 try {
                     $rootDsn = "mysql:host=" . self::$host . ";port=" . self::$port . ";charset=utf8mb4";
-                    $rootPdo = new PDO($rootDsn, self::$username, self::$password, $options);
-                    $sqlFile = __DIR__ . '/../../database_fixed_spacehub.sql';
+                    $rootOptions = $options;
+                    if (defined('PDO::MYSQL_ATTR_MULTI_STATEMENTS')) {
+                        $rootOptions[PDO::MYSQL_ATTR_MULTI_STATEMENTS] = true;
+                    }
+                    $rootPdo = new PDO($rootDsn, self::$username, self::$password, $rootOptions);
+                    $sqlFile = __DIR__ . '/../database_fixed_spacehub.sql';
                     if (file_exists($sqlFile)) {
                         $sql = file_get_contents($sqlFile);
                         $rootPdo->exec($sql);

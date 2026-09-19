@@ -1,222 +1,322 @@
 [
-  {
-    "id": "RM-101",
-    "name": "Starlight Innovation Lab",
-    "type": "Meeting Room",
-    "capacity": 12,
-    "hourlyRate": 450,
-    "amenities": ["โปรเจคเตอร์ 4K", "Smartboard", "Video Conference", "เครื่องชงกาแฟอัตโนมัติ", "Wi-Fi 6"],
-    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมนวัตกรรมพร้อมเทคโนโลยีการประชุมระดับพรีเมียม รองรับการประชุมทั้งออนไซต์และไฮบริด",
-    "minHours": 1
-  },
-  {
-    "id": "RM-102",
-    "name": "Nexus Executive Boardroom",
-    "type": "Boardroom",
-    "capacity": 20,
-    "hourlyRate": 850,
-    "amenities": ["จอ OLED 85 นิ้ว x2", "ระบบเสียง Shure", "โต๊ะไม้สักแท้", "บริการผู้ช่วยส่วนตัว", "High-Speed Internet"],
-    "imageUrl": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมผู้บริหารระดับสูง บรรยากาศเงียบสงบ ดีไซน์หรูหรา สำหรับการตัดสินใจระดับยุทธศาสตร์",
-    "minHours": 2
-  },
-  {
-    "id": "RM-103",
-    "name": "Cyberpunk VR & Media Studio",
-    "type": "Creative Studio",
-    "capacity": 6,
-    "hourlyRate": 600,
-    "amenities": ["VR Headsets (Meta Quest 3)", "Green Screen", "4K Cinema Camera", "ระบบไฟ Studio Lighting", "Soundproof"],
-    "imageUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
-    "description": "สตูดิโอสื่อสร้างสรรค์และเทคโนโลยี VR ครบครัน เหมาะสำหรับการผลิตสื่อ การแคสต์เกม และงานตัดต่อ",
-    "minHours": 1
-  },
-  {
-    "id": "RM-104",
-    "name": "Grand Horizon Seminar Hall",
-    "type": "Seminar Hall",
-    "capacity": 50,
-    "hourlyRate": 1500,
-    "amenities": ["Dual Laser Projectors", "Wireless Mics (x4)", "เวทีบรรยาย Podium", "โต๊ะปรับเปลี่ยนรูปแบบได้", "ระบบเสียง Surround"],
-    "imageUrl": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องสัมมนาขนาดใหญ่รองรับงานเปิดตัวสินค้า เวิร์กชอปองค์กร และการอบรมพนักงานระดับสูง",
-    "minHours": 2
-  },
-  {
-    "id": "RM-105",
-    "name": "Creative Pod Alpha",
-    "type": "Focus Pod",
-    "capacity": 4,
-    "hourlyRate": 220,
-    "amenities": ["จอสำรอง 27 นิ้ว", "เก้าอี้ Ergonomic Herman Miller", "ปลั๊กไฟ Fast Charge USB-C", "Whiteboard"],
-    "imageUrl": "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องทำงานกลุ่มขนาดเล็ก เหมาะสำหรับการ Brainstorming รวดเร็วและการคุยงานที่เป็นส่วนตัว",
-    "minHours": 1
-  },
-  {
-    "id": "RM-106",
-    "name": "Zenith Quiet Focus Chamber",
-    "type": "Focus Pod",
-    "capacity": 2,
-    "hourlyRate": 180,
-    "amenities": ["ผนังเก็บเสียง 100%", "Standing Desk", "Ring Light สัมภาษณ์", "USB-C Power Station"],
-    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องทำงานเงียบระดับส่วนตัวสำหรับ 1-2 ท่าน เหมาะกับการคุยสายธุรกิจ การสัมภาษณ์ออนไลน์ หรือสอบวัดผล",
-    "minHours": 1
-  },
-  {
-    "id": "RM-107",
-    "name": "Silicon Tech Strategy Hub",
-    "type": "Meeting Room",
-    "capacity": 15,
-    "hourlyRate": 500,
-    "amenities": ["จอ 75 นิ้ว 4K", "ClickShare Wireless", "กระดานกระจกเขียนไอเดีย", "เครื่องฟอกอากาศ PM2.5"],
-    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมดีไซน์โมเดิร์นสไตล์ซิลิคอนแวลลีย์ ปลุกไฟความคิดสร้างสรรค์และวางแผนกลยุทธ์ทีม",
-    "minHours": 1
-  },
-  {
-    "id": "RM-108",
-    "name": "Vanguard CEO Suite",
-    "type": "Boardroom",
-    "capacity": 10,
-    "hourlyRate": 750,
-    "amenities": ["โต๊ะประชุมหินอ่อน", "เก้าอี้หนังแท้พรีเมียม", "ระบบควบคุมไฟ Smart Lighting", "วิวทิวทัศน์เมือง 360 องศา"],
-    "imageUrl": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมผู้บริหาร VIP วิวพาโนรามา ตกแต่งหรูหรา สร้างความประทับใจให้คู่ค้าและนักลงทุน",
-    "minHours": 2
-  },
-  {
-    "id": "RM-109",
-    "name": "Podcast Broadcasting Studio B",
-    "type": "Creative Studio",
-    "capacity": 4,
-    "hourlyRate": 550,
-    "amenities": ["Shure SM7B Mics (x4)", "RodeCaster Pro II Board", "กล้อง Sony 4K Streaming", "Acoustic Wall Foam"],
-    "imageUrl": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องอัดพอดแคสต์ระดับมืออาชีพ พร้อมบอร์ดผสมเสียงและกล้องบันทึกวิดีโอ 4K ครบวงจร",
-    "minHours": 1
-  },
-  {
-    "id": "RM-110",
-    "name": "Aurora Skylight Brainstorm Room",
-    "type": "Meeting Room",
-    "capacity": 8,
-    "hourlyRate": 380,
-    "amenities": ["แสงธรรมชาติ Skylight", "กระดานไอเดียแม่เหล็ก", "TV 65 นิ้ว", "โซฟาผ่อนคลายในตัว"],
-    "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมรับแสงธรรมชาติให้ความรู้สึกโปร่งสบาย เหมาะกับการคิดค้นโปรดักต์ใหม่ๆ",
-    "minHours": 1
-  },
-  {
-    "id": "RM-111",
-    "name": "Co-Working Flex Lounge",
-    "type": "Open Space Zone",
-    "capacity": 30,
-    "hourlyRate": 150,
-    "amenities": ["Wi-Fi 6 Speed 1Gbps", "มุมเครื่องดื่มฟรีไม่อั้น", "เก้าอี้ Ergonomic แบบคละสไตล์", "ตู้ล็อกเกอร์"],
-    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-    "description": "พื้นที่ทำงาน Co-working Space บรรยากาศเปิดโล่ง เหมาะสำหรับ Freelancer, Digital Nomad และทีมขนาดเล็ก",
-    "minHours": 1
-  },
-  {
-    "id": "RM-112",
-    "name": "Penthouse Skyline Auditorium",
-    "type": "Seminar Hall",
-    "capacity": 45,
-    "hourlyRate": 1800,
-    "amenities": ["หน้าจอ LED Wall 200 นิ้ว", "เครื่องเสียงระดับ Concert", "เวทีพร้อมโคมไฟ Spotlight", "ห้องแต่งตัวหลังเวที"],
-    "imageUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องหอประชุมลักชัวรีชั้นเพนท์เฮาส์ สำหรับจัดงานแถลงข่าว งานสัมมนาใหญ่ และงานเลี้ยงต้อนรับ VIP",
-    "minHours": 2
-  },
-  {
-    "id": "RM-113",
-    "name": "Quantum AI Prototyping Lab",
-    "type": "Meeting Room",
-    "capacity": 14,
-    "hourlyRate": 580,
-    "amenities": ["Dual Monitor Workstations", "Smart Projector 4K", "Whiteboard 360 องศา", "high-speed Fiber Optic"],
-    "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องแล็บประชุมทดสอบซอฟต์แวร์และ AI พร้อมอุปกรณ์แสดงผลคู่สำหรับโปรแกรมเมอร์และทีมดีไซน์",
-    "minHours": 1
-  },
-  {
-    "id": "RM-114",
-    "name": "Minimalist Design Workshop",
-    "type": "Creative Studio",
-    "capacity": 12,
-    "hourlyRate": 420,
-    "amenities": ["โต๊ะวาดแบบเกรดพรีเมียม", "จอ Color-Calibrated 4K", "อุปกรณ์งานคราฟต์ครบชุด", "ไฟส่องสว่าง Cri 98+"],
-    "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
-    "description": "สเปซสำหรับดีไซเนอร์ ศิลปิน และสถาปนิก แสงธรรมชาติแม่นยำ พร้อมอุปกรณ์ร่างแบบอย่างดี",
-    "minHours": 1
-  },
-  {
-    "id": "RM-115",
-    "name": "Executive Glass Pavilion",
-    "type": "Boardroom",
-    "capacity": 18,
-    "hourlyRate": 900,
-    "amenities": ["ห้องกระจกไร้ขอบ Smart Glass", "ระบบประชุมวิดีโอ 8K", "ไมโครโฟนฝังฝ้าเพดาน", "บริการแคเทอริง VIP"],
-    "imageUrl": "https://images.unsplash.com/photo-1542744836-550523357670?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมผู้บริหารกระจกใสรอบทิศทาง สามารถปรับกระจกเป็นแบบฝ้าทึบแสงด้วยรีโมตปุ่มเดียว",
-    "minHours": 2
-  },
-  {
-    "id": "RM-116",
-    "name": "Soundproof Private Booth C",
-    "type": "Focus Pod",
-    "capacity": 1,
-    "hourlyRate": 120,
-    "amenities": ["ตู้เก็บเสียง Framery", "เก้าอี้ปรับระดับไฟฟ้า", "พอร์ต LAN & Wi-Fi", "ระบบระบายอากาศอัตโนมัติ"],
-    "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80",
-    "description": "บูธทำงานเดี่ยวส่วนบุคคล มอบความเป็นส่วนตัว 100% ปราศจากเสียงรบกวนภายนอก",
-    "minHours": 1
-  },
-  {
-    "id": "RM-117",
-    "name": "Green Screen Video Studio",
-    "type": "Creative Studio",
-    "capacity": 8,
-    "hourlyRate": 700,
-    "amenities": ["ฉาก Green Screen 3 ด้าน", "ไฟซอฟต์บ็อกซ์ Studio 300W", "Teleprompter บทพูด", "Wireless Lavalier Mic"],
-    "imageUrl": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80",
-    "description": "สตูดิโอถ่ายทำวิดีโอและโฆษณาฉากเขียว พร้อมอุปกรณ์ไฟถ่ายทำและกล้องวิดีโอระดับมืออาชีพ",
-    "minHours": 2
-  },
-  {
-    "id": "RM-118",
-    "name": "Loft Creative Meetup Space",
-    "type": "Open Space Zone",
-    "capacity": 25,
-    "hourlyRate": 350,
-    "amenities": ["บาร์กาแฟสดส่วนตัว", "โปรเจกเตอร์ความสว่างสูง", "บีนแบ็กผ่อนคลาย", "เครื่องเสียงลำโพง Marshall"],
-    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    "description": "พื้นที่จัดกิจกรรมและมีตอัพสไตล์ลอฟต์ เหมาะสำหรับงานสังสรรค์ทีม การพูดคุยแชร์ไอเดียแบบเป็นกันเอง",
-    "minHours": 1
-  },
-  {
-    "id": "RM-119",
-    "name": "Matrix Digital Collaboration Room",
-    "type": "Meeting Room",
-    "capacity": 10,
-    "hourlyRate": 400,
-    "amenities": ["Smart Touchscreen Board", "Webcam 4K Auto-Framing", "พอร์ตเชื่อมต่อครบทุกชนิด", "โต๊ะประชุมไร้สาย"],
-    "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมดิจิทัลเชื่อมต่อไร้สายสำหรับทีมพัฒนาผลิตภัณฑ์และการประชุมออนไลน์กับต่างประเทศ",
-    "minHours": 1
-  },
-  {
-    "id": "RM-120",
-    "name": "Imperial Presidential Suite",
-    "type": "Boardroom",
-    "capacity": 25,
-    "hourlyRate": 1200,
-    "amenities": ["โต๊ะประชุมขนาดยาว 8 เมตร", "จอมอนิเตอร์ส่วนตัวประจำที่นั่ง", "ระบบรักษาความปลอดภัย biometric", "บริการชา-กาแฟและเสิร์ฟอาหาร"],
-    "imageUrl": "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&q=80",
-    "description": "ห้องประชุมประธานกรรมการสูงสุด ตกแต่งสุดอลังการสำหรับพิธีลงนามสัญญาและงานประชุมระดับประเทศ",
-    "minHours": 2
-  }
+    {
+        "id": "RM-101",
+        "name": "Starlight Innovation Lab",
+        "type": "Meeting Room",
+        "capacity": 12,
+        "hourlyRate": 450,
+        "amenities": [
+            "โปรเจคเตอร์ 4K",
+            "Smartboard อัจฉริยะ",
+            "ระบบ Video Conference",
+            "เครื่องชงกาแฟอัตโนมัติ",
+            "Wi-Fi 6"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมนวัตกรรมพร้อมเทคโนโลยีการประชุมระดับพรีเมียม รองรับการประชุมทั้งออนไซต์และไฮบริด",
+        "minHours": 1
+    },
+    {
+        "id": "RM-102",
+        "name": "Aurora Collaboration Hub",
+        "type": "Meeting Room",
+        "capacity": 16,
+        "hourlyRate": 550,
+        "amenities": [
+            "จอ LED 75 นิ้ว",
+            "Wireless Presentation System",
+            "เก้าอี้ Ergonomic",
+            "ระบบ Air Purifier"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมสมัยใหม่พร้อมระบบนำเสนอไร้สาย เหมาะสำหรับทีมงาน 10-16 คน",
+        "minHours": 1
+    },
+    {
+        "id": "RM-103",
+        "name": "Meridian Strategy Room",
+        "type": "Meeting Room",
+        "capacity": 10,
+        "hourlyRate": 400,
+        "amenities": [
+            "โปรเจคเตอร์ Full HD",
+            "กระดานไวท์บอร์ดใหญ่",
+            "ระบบเสียง Bose",
+            "พอร์ต HDMI USB-C"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมวางแผนกลยุทธ์ บรรยากาศเงียบสงบ เน้นประสิทธิภาพทำงานกลุ่ม",
+        "minHours": 1
+    },
+    {
+        "id": "RM-104",
+        "name": "Zenith Team Space",
+        "type": "Meeting Room",
+        "capacity": 8,
+        "hourlyRate": 350,
+        "amenities": [
+            "Apple TV AirPlay",
+            "กระดาน Glass Board",
+            "ไฟ Adjustable Lighting",
+            "ระบบ Booking Display"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมขนาดกลาง เหมาะสำหรับ Stand-up Meeting สไตล์มินิมอล",
+        "minHours": 1
+    },
+    {
+        "id": "RM-201",
+        "name": "Nexus Executive Boardroom",
+        "type": "Boardroom",
+        "capacity": 20,
+        "hourlyRate": 850,
+        "amenities": [
+            "จอ OLED 85 นิ้ว 2 จอ",
+            "ระบบเสียงรอบทิศทาง Shure",
+            "โต๊ะประชุมไม้สักแท้",
+            "บริการผู้ช่วยส่วนตัว"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมผู้บริหารระดับสูง ดีไซน์หรูหรา สำหรับการตัดสินใจระดับยุทธศาสตร์",
+        "minHours": 2
+    },
+    {
+        "id": "RM-202",
+        "name": "Pinnacle Director Suite",
+        "type": "Boardroom",
+        "capacity": 24,
+        "hourlyRate": 1200,
+        "amenities": [
+            "Video Wall 4K",
+            "ระบบ Conference Polycom",
+            "โต๊ะ U-Shape พรีเมียม",
+            "มินิบาร์และบริการอาหาร"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+        "description": "บอร์ดรูมระดับ C-Suite ที่ใหญ่ที่สุด พร้อมระบบประชุมทางไกลระดับมืออาชีพ",
+        "minHours": 2
+    },
+    {
+        "id": "RM-203",
+        "name": "Summit Leadership Chamber",
+        "type": "Boardroom",
+        "capacity": 18,
+        "hourlyRate": 950,
+        "amenities": [
+            "Interactive Display 80 นิ้ว",
+            "Cisco Webex Room Kit",
+            "เก้าอี้หนังนำเข้าอิตาลี",
+            "ระบบแสงธรรมชาติ"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1541746972996-4e0b0f43e02a?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมสำหรับผู้นำองค์กร ตกแต่งวัสดุพรีเมียม วิว Panoramic",
+        "minHours": 2
+    },
+    {
+        "id": "RM-301",
+        "name": "Spectrum Creative Studio",
+        "type": "Creative Studio",
+        "capacity": 15,
+        "hourlyRate": 650,
+        "amenities": [
+            "Wacom Drawing Tablet x4",
+            "Mac Pro x6",
+            "กล้อง Sony A7IV",
+            "ระบบ Lighting Studio"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
+        "description": "สตูดิโอสร้างสรรค์ทีม Design Media Production อุปกรณ์ครบครัน",
+        "minHours": 2
+    },
+    {
+        "id": "RM-302",
+        "name": "Prism Design Workshop",
+        "type": "Creative Studio",
+        "capacity": 12,
+        "hourlyRate": 580,
+        "amenities": [
+            "จอ Color-Calibrated 4K x4",
+            "Pantone Color Library",
+            "3D Printer Bambu Lab",
+            "Material Sample Wall"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้อง Workshop ออกแบบผลิตภัณฑ์ เครื่องพิมพ์ 3D คลังวัสดุตัวอย่าง 500 ชิ้น",
+        "minHours": 2
+    },
+    {
+        "id": "RM-401",
+        "name": "Solstice Focus Pod A",
+        "type": "Focus Pod",
+        "capacity": 4,
+        "hourlyRate": 200,
+        "amenities": [
+            "จอภาพสำรอง 27 นิ้ว",
+            "เก้าอี้ Ergonomic Herman Miller",
+            "ปลั๊กไฟ USB-C Fast Charge"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องทำงานกลุ่มเล็ก เหมาะ Brainstorming งานต้องการสมาธิสูง",
+        "minHours": 1
+    },
+    {
+        "id": "RM-402",
+        "name": "Equinox Focus Pod B",
+        "type": "Focus Pod",
+        "capacity": 3,
+        "hourlyRate": 180,
+        "amenities": [
+            "Standing Desk ปรับระดับ",
+            "จอ Dual Monitor Setup",
+            "Noise Cancelling Speaker",
+            "Wi-Fi 6E Priority"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องทำงานส่วนตัว Deep Work Standing Desk ปรับระดับได้",
+        "minHours": 1
+    },
+    {
+        "id": "RM-403",
+        "name": "Aeon Private Office",
+        "type": "Focus Pod",
+        "capacity": 2,
+        "hourlyRate": 250,
+        "amenities": [
+            "โต๊ะทำงาน L-Shape",
+            "ล็อคเกอร์ส่วนตัว",
+            "เครื่อง Espresso ส่วนตัว",
+            "โทรศัพท์ Direct Line"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",
+        "description": "ออฟฟิศส่วนตัวขนาดกะทัดรัด สำหรับ Executive 1-2 คน ความเป็นส่วนตัวสูง",
+        "minHours": 1
+    },
+    {
+        "id": "RM-501",
+        "name": "Grand Horizon Seminar Hall",
+        "type": "Seminar Hall",
+        "capacity": 80,
+        "hourlyRate": 2500,
+        "amenities": [
+            "เวทีนำเสนอสูง 1 เมตร",
+            "ระบบ PA 5000W",
+            "จอ LED 10x6 เมตร",
+            "ระบบแสงอัจฉริยะ Philips Hue"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องสัมมนาขนาดใหญ่ Corporate Event งานเปิดตัวผลิตภัณฑ์",
+        "minHours": 4
+    },
+    {
+        "id": "RM-502",
+        "name": "Apex Training Center",
+        "type": "Seminar Hall",
+        "capacity": 40,
+        "hourlyRate": 1200,
+        "amenities": [
+            "โต๊ะ Classroom Style",
+            "โปรเจคเตอร์ Laser 5000 ANSI",
+            "ระบบ Live Streaming",
+            "กล้อง PTZ Auto-tracking"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1560523159-4a9692d222f8?auto=format&fit=crop&w=800&q=80",
+        "description": "ศูนย์ฝึกอบรม Live Streaming ในตัว Corporate Training",
+        "minHours": 3
+    },
+    {
+        "id": "RM-503",
+        "name": "Vantage Conference Theatre",
+        "type": "Seminar Hall",
+        "capacity": 60,
+        "hourlyRate": 1800,
+        "amenities": [
+            "ที่นั่ง Theatre U-Shape",
+            "ระบบแปลภาษา 4 ภาษา",
+            "Breakout Rooms x3",
+            "Live Streaming 4K"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมนานาชาติ ระบบแปลภาษาพร้อมกัน Breakout Room",
+        "minHours": 3
+    },
+    {
+        "id": "RM-601",
+        "name": "Nova Co-Working Flex Hub",
+        "type": "Open Space Zone",
+        "capacity": 40,
+        "hourlyRate": 120,
+        "amenities": [
+            "High-speed Wi-Fi 6",
+            "ตู้กดน้ำของว่างฟรี",
+            "โซนพักผ่อนเกม",
+            "ล็อคเกอร์ฟรี 4 ชม."
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+        "description": "พื้นที่ทำงานรวม Freelancer Startup ต้องการความยืดหยุ่น",
+        "minHours": 1
+    },
+    {
+        "id": "RM-602",
+        "name": "Pulse Innovation Campus",
+        "type": "Open Space Zone",
+        "capacity": 60,
+        "hourlyRate": 100,
+        "amenities": [
+            "Hot Desk 60 ที่",
+            "Phone Booth กันเสียง x4",
+            "Cafe Corner",
+            "Event Space ในตัว"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=800&q=80",
+        "description": "Co-Working Space ใหญ่ที่สุด บรรยากาศ Silicon Valley",
+        "minHours": 1
+    },
+    {
+        "id": "RM-603",
+        "name": "Orbit Startup Lounge",
+        "type": "Open Space Zone",
+        "capacity": 25,
+        "hourlyRate": 150,
+        "amenities": [
+            "Dedicated Gigabit Internet",
+            "3D Printer Laser Cutter",
+            "Mini Kitchen",
+            "Pitch Deck Display"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
+        "description": "พื้นที่ Startup เครื่องมือ Prototype ทำ MVP",
+        "minHours": 1
+    },
+    {
+        "id": "RM-701",
+        "name": "Quantum Hybrid Studio",
+        "type": "Meeting Room",
+        "capacity": 14,
+        "hourlyRate": 750,
+        "amenities": [
+            "Camera Array 360 องศา",
+            "Microsoft Teams Room System",
+            "Sound Proof Wall",
+            "AR VR Meeting Kit"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+        "description": "ห้องประชุมไฮบริดรุ่นล่าสุด กล้อง 360 ชุด AR VR Virtual Meeting",
+        "minHours": 1
+    },
+    {
+        "id": "RM-702",
+        "name": "Solaris Rooftop Terrace",
+        "type": "Open Space Zone",
+        "capacity": 30,
+        "hourlyRate": 900,
+        "amenities": [
+            "วิวพาโนรามา 360 องศา",
+            "Wi-Fi กลางแจ้ง Outdoor Grade",
+            "โต๊ะ Outdoor Premium",
+            "ระบบไฟ Ambient LED"
+        ],
+        "imageUrl": "https:\/\/images.unsplash.com\/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
+        "description": "พื้นที่ประชุมกลางแจ้งบนดาดฟ้า วิว 360 Team Building",
+        "minHours": 1
+    }
 ]

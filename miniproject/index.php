@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $order = new Order($customerName, $phone);
 
-    $paperSize = new PaperSize($paperSizeStr === 'A3' ? PaperSize::A3 : PaperSize::A4);
+    $paperSize = $paperSizeStr === 'A3' ? PaperSize::A3 : PaperSize::A4;
     $paper = new Paper($paperSize, $isCardstock);
 
     if ($serviceType === 'print') {

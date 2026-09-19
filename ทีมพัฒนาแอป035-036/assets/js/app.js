@@ -159,14 +159,27 @@ function renderRoomGrid() {
     const isAvailable = AppState.availableRoomIds.includes(room.id);
     const capacityOk = room.capacity >= AppState.filter.attendees;
 
+    // แยกแยะสถานะระหว่างความจุไม่พอ กับ ห้องติดจองจริง
+    let statusTagHtml = '';
+    let bookBtnHtml = '';
+
+    if (!capacityOk) {
+      statusTagHtml = `<span class="room-status-tag capacity-exceeded">ความจุไม่พอ (สูงสุด ${room.capacity} คน)</span>`;
+      bookBtnHtml = `<button type="button" class="btn-book-room" disabled style="background:#475569;cursor:not-allowed;">ความจุไม่เพียงพอ</button>`;
+    } else if (!isAvailable) {
+      statusTagHtml = `<span class="room-status-tag booked">ไม่ว่าง / ติดจอง</span>`;
+      bookBtnHtml = `<button type="button" class="btn-book-room" disabled style="background:#334155;cursor:not-allowed;">ช่วงเวลานี้ติดจอง</button>`;
+    } else {
+      statusTagHtml = `<span class="room-status-tag available">ว่าง จองได้</span>`;
+      bookBtnHtml = `<button type="button" class="btn-book-room" onclick="openBookingModal('${room.id}')">จองห้องนี้ทันที</button>`;
+    }
+
     return `
-      <div class="room-card ${!isAvailable ? 'disabled' : ''}">
+      <div class="room-card ${!isAvailable || !capacityOk ? 'disabled' : ''}">
         <div class="room-thumb">
           <img src="${room.imageUrl}" alt="${escapeHtml(room.name)}" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80';">
           <span class="room-type-badge">${escapeHtml(room.type)}</span>
-          <span class="room-status-tag ${isAvailable ? 'available' : 'booked'}">
-            ${isAvailable ? 'ว่าง จองได้' : 'ไม่ว่าง / ติดจอง'}
-          </span>
+          ${statusTagHtml}
         </div>
 
         <div class="room-content">
@@ -197,11 +210,7 @@ function renderRoomGrid() {
               </div>
             </div>
 
-            <button type="button" class="btn-book-room" 
-              ${!isAvailable ? 'disabled' : ''} 
-              onclick="openBookingModal('${room.id}')">
-              ${isAvailable ? 'จองห้องนี้ทันที' : 'ไม่พร้อมใช้งาน'}
-            </button>
+            ${bookBtnHtml}
           </div>
         </div>
       </div>
@@ -216,7 +225,17 @@ function initFilterControls() {
   const endSelect = document.getElementById('filterEndTime');
   const attendeesInput = document.getElementById('filterAttendees');
 
-  const onFilterChange = () => {
+  const onFilterChange = (e) => {
+    // ตรวจสอบและปรับเวลาสิ้นสุดอัตโนมัติหากเวลาเริ่ม >= เวลาจบ
+    if (e && e.target === startSelect) {
+      const startH = parseInt(startSelect.value.split(':')[0], 10);
+      const endH = parseInt(endSelect.value.split(':')[0], 10);
+      if (startH >= endH) {
+        const nextH = Math.min(20, startH + 2);
+        endSelect.value = String(nextH).padStart(2, '0') + ':00';
+      }
+    }
+
     AppState.filter.date = dateInput.value;
     AppState.filter.start = startSelect.value;
     AppState.filter.end = endSelect.value;
@@ -316,10 +335,12 @@ function recalculateBookingCosts() {
   const startHour = parseInt(AppState.filter.start.split(':')[0], 10);
   const endHour = parseInt(AppState.filter.end.split(':')[0], 10);
   const duration = Math.max(1, endHour - startHour);
+  const minHours = AppState.selectedRoom.minHours || 1;
+  const billableHours = Math.max(minHours, duration);
   const attendees = parseInt(document.getElementById('formAttendees')?.value, 10) || 1;
 
-  // 1. ค่าห้องพื้นฐาน
-  const basePrice = duration * AppState.selectedRoom.hourlyRate;
+  // 1. ค่าห้องพื้นฐาน (คำนวณตามชั่วโมงขั้นต่ำ minHours ของห้อง)
+  const basePrice = billableHours * AppState.selectedRoom.hourlyRate;
 
   // 2. ค่าบริการเสริม
   let addonsTotal = 0;
@@ -340,7 +361,10 @@ function recalculateBookingCosts() {
   const grandTotal = subtotal + tax;
 
   // แสดงผลตัวเลขบน UI
-  document.getElementById('calcDuration').textContent = `${duration} ชั่วโมง`;
+  const durationText = duration < minHours 
+    ? `${duration} ชม. (คิดขั้นต่ำ ${minHours} ชม.)`
+    : `${duration} ชั่วโมง`;
+  document.getElementById('calcDuration').textContent = durationText;
   document.getElementById('calcBasePrice').textContent = `฿${basePrice.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
   document.getElementById('calcAddonsPrice').textContent = `฿${addonsTotal.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
   document.getElementById('calcTaxPrice').textContent = `฿${tax.toLocaleString(undefined, {minimumFractionDigits: 2})}`;

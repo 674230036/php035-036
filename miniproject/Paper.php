@@ -12,9 +12,9 @@ class Paper {
 
     public function getPrice(): float {
         $price = 0.0;
-        if ($this->size->value === PaperSize::A4) {
+        if ($this->size === PaperSize::A4) {
             $price = 0.5; // Base price for A4
-        } elseif ($this->size->value === PaperSize::A3) {
+        } elseif ($this->size === PaperSize::A3) {
             $price = 1.5; // Base price for A3
         }
         

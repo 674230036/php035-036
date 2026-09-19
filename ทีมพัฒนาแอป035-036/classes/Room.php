@@ -161,7 +161,7 @@ class Room
             $data['name'] ?? '',                                                         // ดึงค่า name
             $data['type'] ?? 'Standard Room',                                            // ดึงค่า type
             (int)($data['capacity'] ?? 1),                                               // ดึงค่า capacity
-            (float)($data['hourlyRate'] ?? 0.0),                                         // ดึงค่า hourlyRate
+            (float)($data['hourlyRate'] ?? ($data['hourly_rate'] ?? 0.0)),              // ดึงค่า hourlyRate (รองรับทั้ง camelCase และ snake_case จาก MySQL)
             is_array($data['amenities'] ?? null) 
                 ? $data['amenities'] 
                 : (json_decode($data['amenities'] ?? '[]', true) ?? []),                 // ดึงค่า amenities
